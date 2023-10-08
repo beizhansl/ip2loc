@@ -1,0 +1,74 @@
+[
+  {
+    "name": "\u5bf9\u8c61\u5b58\u50a8-\u79d1\u6280\u4e91",
+    "desc_name": "\u79d1\u6280\u4e91_OBS",
+    "api_url": "http://159.226.91.149:34135/loki/api/v1/query_range?query={job=\"obs\"}",
+    "sort_weight": -99,
+    "desc": "",
+    "status": true,
+    "id": "825fbe0a-e2b9-4f38-82ae-632b222da560"
+  },
+  {
+    "name": "\u5bf9\u8c61\u5b58\u50a8-\u8fd0\u7ef4\u5927\u6570\u636e",
+    "desc_name": "\u667a\u80fd\u8fd0\u7ef4_OBS",
+    "api_url": "http://10.16.1.19:34135/loki/api/v1/query_range?query={job=\"aiopsobs\"}",
+    "sort_weight": -50,
+    "desc": "",
+    "status": true,
+    "id": "bd0d6d28-174c-4836-aa61-533e71c30c9d"
+  },
+  {
+    "name": "\u8f6f\u4ef6\u56ed\u670d\u52a1\u5355\u5143",
+    "desc_name": "\u8f6f\u4ef6\u56ed_OBS",
+    "api_url": "http://159.226.33.9:34135/loki/api/v1/query_range?query={job=\"rjyobs\"}",
+    "sort_weight": 2,
+    "desc": "",
+    "status": true,
+    "id": "4937e8bc-ff89-409d-b9dc-919c0e5331e1"
+  },
+  {
+    "name": "\u5bf9\u8c61\u5b58\u50a8-SDG",
+    "desc_name": "SDG_OBS",
+    "api_url": "http://159.226.91.149:44135/loki/api/v1/query_range?query={job=\"sdgobs\"}",
+    "sort_weight": 4,
+    "desc": "",
+    "status": true,
+    "id": "5b41fb03-1974-4f2a-826e-e1456ef4d0e0"
+  },
+  {
+    "name": "\u4e00\u4f53\u4e91-\u524d\u7aef\u65e5\u5fd7",
+    "desc_name": "\u524d\u7aef\u65e5\u5fd7",
+    "api_url": "http://10.16.1.19:44135/loki/api/v1/query_range?query={job=\"service\"}",
+    "sort_weight": 8,
+    "desc": "",
+    "status": true,
+    "id": "0fb770bd-2d94-43bf-ba8c-446de71a9fda"
+  },
+  {
+    "name": "\u4e00\u4f53\u4e91-\u540e\u7aef\u65e5\u5fd7",
+    "desc_name": "\u540e\u7aef\u65e5\u5fd7",
+    "api_url": "http://10.16.1.19:44135/loki/api/v1/query_range?query={job=\"servicebackend\"}",
+    "sort_weight": 12,
+    "desc": "",
+    "status": true,
+    "id": "f56dbebf-8d60-4e19-94a5-d334ad6a497b"
+  },
+  {
+    "name": "Aiops\u7ad9\u70b9-\u524d\u7aef\u65e5\u5fd7",
+    "desc_name": "Aiops\u524d\u7aef",
+    "api_url": "http://10.16.1.19:44135/loki/api/v1/query_range?query={job=\"aiops\"}",
+    "sort_weight": 5,
+    "desc": "",
+    "status": true,
+    "id": "fdf3b150-11e0-4155-bb1d-8ee06e735ebf"
+  },
+  {
+    "name": "Aiops\u7ad9\u70b9-\u540e\u7aef\u65e5\u5fd7",
+    "desc_name": "Aiops\u540e\u7aef",
+    "api_url": "http://10.16.1.19:44135/loki/api/v1/query_range?query={job=\"aiopsbackend\"}",
+    "sort_weight": 6,
+    "desc": "",
+    "status": true,
+    "id": "51b5c53e-3641-406b-932f-2feed8f4f609"
+  }
+]
