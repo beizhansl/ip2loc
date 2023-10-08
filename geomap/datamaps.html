@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+  <h2>Datamaps Playground</h2>
+  <p><a href="http://datamaps.github.io/">DataMaps Project Homepage</a></p>
+  <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
+ 
+     
+     <script>
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 500,
+        fills: {
+          defaultFill: '#778899',
+          lt50: 'rgba(1,255,0,0)',
+          rt50: '#FF0000',
+        }
+      });
+      
+       //bubbles, custom popup on hover template
+     map.bubbles([
+       {name: 'Hot', latitude: 21.32, longitude: 5.32, radius: 2, fillKey: 'rt50'},
+       {name: 'x', latitude: 21.32, longitude: 5.32, radius: 5, fillKey: 'rt50'},
+       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 2, fillKey: 'rt50'},
+       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 2, fillKey: 'rt50'},
+       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 2, fillKey: 'rt50'},
+
+     ], {
+       popupTemplate: function(geo, data) {
+         return "<div class='hoverinfo'>It is " + data.name + "</div>";
+       }
+     });
+     </script>
+</body>
