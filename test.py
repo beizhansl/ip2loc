@@ -20,10 +20,10 @@ cookie = {'csrftoken':'ZsLyt9MfI3LMKMCClNWjdtInkYs7i6PxTGGFEkrKCJKZmZZC4A29Nx7CG
 #     print("第二个IP地址：", second_ip)
 # else:
 # #     print("日志中没有足够的IP地址")
-import json
-re = requests.get('http://159.226.91.149:34135/loki/api/v1/query_range?query={job="service"}', params={'start':'1695680611','end':'1695819432', 'limit': 500000, 'direction':'forward'}, timeout=1000)
-with open('data.json','w+') as p:
-    json.dump(re.json(),fp=p, indent=2)
+# import json
+# re = requests.get('http://159.226.91.149:34135/loki/api/v1/query_range?query={job="service"}', params={'start':'1695680611','end':'1695819432', 'limit': 500000, 'direction':'forward'}, timeout=1000)
+# with open('data.json','w+') as p:
+#     json.dump(re.json(),fp=p, indent=2)
 #print(re.json()['data']['result'][0]['values'])
 
 # import datetime
@@ -41,4 +41,7 @@ with open('data.json','w+') as p:
 #nsend = int(end.timestamp()) 
 #print(nsend)
 #print(end)
-
+import os 
+filename = f'./loc/day/000000'
+if not os.path.exists(filename):
+    os.makedirs(filename)

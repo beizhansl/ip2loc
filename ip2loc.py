@@ -48,7 +48,9 @@ def get_log_by_time(logh, web, start, end):
 
 
 def ip2json(web, start, end, time):
-    filename = './loc/'
+    filename = f'./loc/day/{end}/'
+    if not os.path.exists(filename):
+        os.makedirs(filename)
     filename += web['name']
     filename += '_'
     filename += str(end) 
