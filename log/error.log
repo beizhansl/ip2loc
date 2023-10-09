@@ -1,0 +1,22 @@
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000
+ERROR:root:cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000
+ERROR:root:cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000
+ERROR:root:cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+
+ERROR:root:Get log error for HTTPConnectionPool(host='10.16.1.19', port=44135): Read timed out. (read timeout=30) url http://10.16.1.19:44135/loki/api/v1/query_range?query={job="aiops"}&start=1695052800000000000&end=169513920000000000
+
+ERROR:root:Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1694880000000000000&end=1694957331067910727
+
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1694880000000000000&end=1694957952766221258
+ERROR:root:Get "https://aiopsobs.cstcloud.cn/api/v1/obj/sdgobs-iharbor-access/fake/7e6bc4e6f2a9d4b:18aa3558a34:18aa355ac7e:36d45886/": dial tcp: lookup aiopsobs.cstcloud.cn on 8.8.8.8:53: no such host
+
+
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1695398400000000000&end=1695456737676084815
+ERROR:root:Get "https://aiopsobs.cstcloud.cn/api/v1/obj/sdgobs-iharbor-access/fake/7e6bc4e6f2a9d4b:18ac110638e:18ac110909f:86c233d5/": dial tcp: lookup aiopsobs.cstcloud.cn on 8.8.8.8:53: dial udp 8.8.8.8:53: socket: too many open files
+
+ERROR:root:Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696608000000000000&end=1696644820399471041
+ERROR:root:Get "https://aiopsobs.cstcloud.cn/api/v1/obj/sdgobs-iharbor-access/fake/7e6bc4e6f2a9d4b:18b07e0644e:18b07e0a00c:26a953bd/": dial tcp 223.193.36.2:443: socket: too many open files

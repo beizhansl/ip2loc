@@ -195,8 +195,9 @@ if __name__ == '__main__':
         print(region_str)
         print(regeion[2])
         try:
-            print(loc[regeion[0]])
+            print(loc[regeion[2]])
         except:
+            print(loc[regeion[0]])
             continue
     searcher.close()
 
