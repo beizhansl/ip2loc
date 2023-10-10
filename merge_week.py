@@ -8,7 +8,7 @@ from util import get_websites_from_file, store_file_with_retry
 
 def logging_fun():
     logging.basicConfig(level=logging.INFO)
-    log_handle = RotatingFileHandler("./log/merge_log.txt", maxBytes=1024 * 1024 * 1024, backupCount=5)
+    log_handle = RotatingFileHandler("/home/ip2loc/log/merge_log.txt", maxBytes=1024 * 1024 * 1024, backupCount=5)
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s - %(process)d")
     log_handle.setFormatter(formatter)
     logging.getLogger().addHandler(log_handle)
@@ -16,7 +16,7 @@ def logging_fun():
 def merge_week(end):
     website_list = get_websites_from_file()
     oneday = 24*60*60*1*(10**9)
-    dirname = f'./loc/'
+    dirname = f'/home/ip2loc/loc/day/'
     for web in website_list:
         ip_loc_dict = {}
         ip_count_dict = {}
@@ -70,7 +70,7 @@ def merge_week(end):
         loc_json['range'] = 'day'  
         loc_json['id'] = web['id']
         loc_json['data'] = loc_msg_list
-        weekdirname = f'./loc/week/'
+        weekdirname = f'/home/ip2loc/loc/week/'
         filename = weekdirname + web['name'] + '_' + str(end) + '_week.json'
         store_file_with_retry(filename=filename, data=loc_json)
 

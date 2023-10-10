@@ -1,1 +1,843 @@
 2023-10-09 21:06:57,514 - INFO - ----All task finished---- - 23320
+2023-10-10 10:31:45,550 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3469265
+2023-10-10 10:31:45,551 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3469265
+2023-10-10 10:31:45,550 - INFO - Starting get log of day 1696867200000000000 from 对象存储-运维大数据 - 3469266
+2023-10-10 10:31:45,551 - INFO - Starting get log of day 1696867200000000000 from 软件园服务单元 - 3469267
+2023-10-10 10:31:45,552 - INFO - getting log... time 1696780800000000000 from 对象存储-运维大数据 log num is 0 - 3469266
+2023-10-10 10:31:45,551 - INFO - Starting get log of day 1696867200000000000 from 对象存储-SDG - 3469268
+2023-10-10 10:31:45,552 - INFO - getting log... time 1696780800000000000 from 软件园服务单元 log num is 0 - 3469267
+2023-10-10 10:31:45,552 - INFO - getting log... time 1696780800000000000 from 对象存储-SDG log num is 0 - 3469268
+2023-10-10 10:31:45,551 - INFO - Starting get log of day 1696867200000000000 from 一体云-前端日志 - 3469269
+2023-10-10 10:31:45,552 - INFO - getting log... time 1696780800000000000 from 一体云-前端日志 log num is 0 - 3469269
+2023-10-10 10:31:45,552 - INFO - Starting get log of day 1696867200000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:31:45,553 - INFO - getting log... time 1696780800000000000 from Aiops站点-前端日志 log num is 0 - 3469271
+2023-10-10 10:31:45,552 - INFO - Starting get log of day 1696867200000000000 from 一体云-后端日志 - 3469270
+2023-10-10 10:31:45,554 - INFO - Starting get log of day 1696867200000000000 from Aiops站点-后端日志 - 3469272
+2023-10-10 10:31:45,554 - INFO - getting log... time 1696780800000000000 from Aiops站点-后端日志 log num is 0 - 3469272
+2023-10-10 10:31:45,554 - INFO - getting log... time 1696780800000000000 from 一体云-后端日志 log num is 0 - 3469270
+2023-10-10 10:31:49,135 - INFO - Starting handle ip of day 1696867200000000000 from 软件园服务单元 - 3469267
+2023-10-10 10:31:54,402 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3469265
+2023-10-10 10:32:00,087 - ERROR - Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696780800000000000&end=1696867133834507387 - 3469268
+2023-10-10 10:32:00,093 - INFO - Starting get log of day 1696780800000000000 from 对象存储-科技云 - 3469268
+2023-10-10 10:32:00,094 - INFO - getting log... time 1696694400000000000 from 对象存储-科技云 log num is 0 - 3469268
+2023-10-10 10:32:09,270 - INFO - Starting store msg of day 1696867200000000000 from 软件园服务单元 - 3469267
+2023-10-10 10:32:09,270 - INFO - Starting get log of day 1696780800000000000 from 对象存储-运维大数据 - 3469267
+2023-10-10 10:32:09,271 - INFO - getting log... time 1696694400000000000 from 对象存储-运维大数据 log num is 0 - 3469267
+2023-10-10 10:32:14,499 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3469265
+2023-10-10 10:32:14,500 - INFO - Starting get log of day 1696780800000000000 from 软件园服务单元 - 3469265
+2023-10-10 10:32:14,501 - INFO - getting log... time 1696694400000000000 from 软件园服务单元 log num is 0 - 3469265
+2023-10-10 10:32:16,907 - ERROR - Get log error for ("Connection broken: ConnectionResetError(104, 'Connection reset by peer')", ConnectionResetError(104, 'Connection reset by peer')) url http://159.226.33.9:34135/loki/api/v1/query_range?query={job="rjyobs"}&start=1696694400000000000&end=1696730679194454887 - 3469265
+2023-10-10 10:32:16,912 - INFO - Starting get log of day 1696780800000000000 from 对象存储-SDG - 3469265
+2023-10-10 10:32:16,913 - INFO - getting log... time 1696694400000000000 from 对象存储-SDG log num is 0 - 3469265
+2023-10-10 10:32:16,923 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696694400000000000&end=1696780800000000000 - 3469265
+2023-10-10 10:32:16,923 - ERROR - frontend not running: New
+ - 3469265
+2023-10-10 10:32:42,503 - INFO - Starting handle ip of day 1696780800000000000 from 对象存储-科技云 - 3469268
+2023-10-10 10:33:02,588 - INFO - Starting store msg of day 1696780800000000000 from 对象存储-科技云 - 3469268
+2023-10-10 10:33:02,589 - INFO - Starting get log of day 1696780800000000000 from 一体云-前端日志 - 3469268
+2023-10-10 10:33:02,589 - INFO - getting log... time 1696694400000000000 from 一体云-前端日志 log num is 0 - 3469268
+2023-10-10 10:37:26,796 - ERROR - Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696694400000000000&end=1696729374216299912 - 3469265
+2023-10-10 10:37:26,800 - INFO - Starting get log of day 1696780800000000000 from 一体云-后端日志 - 3469265
+2023-10-10 10:37:26,800 - INFO - getting log... time 1696694400000000000 from 一体云-后端日志 log num is 0 - 3469265
+2023-10-10 10:40:10,583 - INFO - Starting handle ip of day 1696867200000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:40:30,689 - INFO - Starting store msg of day 1696867200000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:40:30,690 - INFO - Starting get log of day 1696780800000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:40:30,690 - INFO - getting log... time 1696694400000000000 from Aiops站点-前端日志 log num is 0 - 3469271
+2023-10-10 10:42:21,769 - INFO - Starting handle ip of day 1696867200000000000 from 一体云-前端日志 - 3469269
+2023-10-10 10:42:41,867 - INFO - Starting store msg of day 1696867200000000000 from 一体云-前端日志 - 3469269
+2023-10-10 10:42:41,869 - INFO - Starting get log of day 1696780800000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 10:42:41,869 - INFO - getting log... time 1696694400000000000 from Aiops站点-后端日志 log num is 0 - 3469269
+2023-10-10 10:42:49,908 - INFO - Starting handle ip of day 1696867200000000000 from 一体云-后端日志 - 3469270
+2023-10-10 10:43:10,231 - INFO - Starting store msg of day 1696867200000000000 from 一体云-后端日志 - 3469270
+2023-10-10 10:43:10,233 - INFO - Starting get log of day 1696694400000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:43:10,234 - INFO - getting log... time 1696608000000000000 from 对象存储-科技云 log num is 0 - 3469270
+2023-10-10 10:43:44,551 - INFO - Starting handle ip of day 1696780800000000000 from 一体云-前端日志 - 3469268
+2023-10-10 10:44:04,635 - INFO - Starting store msg of day 1696780800000000000 from 一体云-前端日志 - 3469268
+2023-10-10 10:44:04,635 - INFO - Starting get log of day 1696694400000000000 from 对象存储-运维大数据 - 3469268
+2023-10-10 10:44:04,635 - INFO - getting log... time 1696608000000000000 from 对象存储-运维大数据 log num is 0 - 3469268
+2023-10-10 10:44:06,655 - INFO - Starting handle ip of day 1696694400000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:44:07,720 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000 - 3469268
+2023-10-10 10:44:07,720 - ERROR - cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+ - 3469268
+2023-10-10 10:44:08,807 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000 - 3469268
+2023-10-10 10:44:08,807 - ERROR - cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+ - 3469268
+2023-10-10 10:44:09,941 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://10.16.1.19:34135/loki/api/v1/query_range?query={job="aiopsobs"}&start=1696608000000000000&end=1696694400000000000 - 3469268
+2023-10-10 10:44:09,942 - ERROR - cardinality limit exceeded for {}; 111188 entries, more than limit of 100000
+ - 3469268
+2023-10-10 10:44:10,943 - ERROR - get log failed of day - 3469268
+2023-10-10 10:44:10,945 - INFO - Starting get log of day 1696694400000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:44:10,945 - INFO - getting log... time 1696608000000000000 from 软件园服务单元 log num is 0 - 3469268
+2023-10-10 10:44:11,625 - INFO - Starting handle ip of day 1696694400000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:44:26,753 - INFO - Starting store msg of day 1696694400000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:44:26,754 - INFO - Starting get log of day 1696694400000000000 from 对象存储-SDG - 3469270
+2023-10-10 10:44:26,755 - INFO - getting log... time 1696608000000000000 from 对象存储-SDG log num is 0 - 3469270
+2023-10-10 10:44:26,769 - INFO - Starting get log of day 1696694400000000000 from 一体云-前端日志 - 3469270
+2023-10-10 10:44:26,770 - INFO - getting log... time 1696608000000000000 from 一体云-前端日志 log num is 0 - 3469270
+2023-10-10 10:44:31,750 - INFO - Starting store msg of day 1696694400000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:44:31,752 - INFO - Starting get log of day 1696694400000000000 from 一体云-后端日志 - 3469268
+2023-10-10 10:44:31,752 - INFO - getting log... time 1696608000000000000 from 一体云-后端日志 log num is 0 - 3469268
+2023-10-10 10:49:46,161 - INFO - Starting handle ip of day 1696780800000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:49:47,872 - INFO - Starting handle ip of day 1696780800000000000 from 一体云-后端日志 - 3469265
+2023-10-10 10:50:06,246 - INFO - Starting store msg of day 1696780800000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:50:06,247 - INFO - Starting get log of day 1696694400000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:50:06,247 - INFO - getting log... time 1696608000000000000 from Aiops站点-前端日志 log num is 0 - 3469271
+2023-10-10 10:50:07,967 - INFO - Starting store msg of day 1696780800000000000 from 一体云-后端日志 - 3469265
+2023-10-10 10:50:07,968 - INFO - Starting get log of day 1696694400000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 10:50:07,968 - INFO - getting log... time 1696608000000000000 from Aiops站点-后端日志 log num is 0 - 3469265
+2023-10-10 10:54:50,646 - INFO - Starting handle ip of day 1696694400000000000 from 一体云-前端日志 - 3469270
+2023-10-10 10:55:10,749 - INFO - Starting store msg of day 1696694400000000000 from 一体云-前端日志 - 3469270
+2023-10-10 10:55:10,750 - INFO - Starting get log of day 1696608000000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:55:10,750 - INFO - getting log... time 1696521600000000000 from 对象存储-科技云 log num is 0 - 3469270
+2023-10-10 10:55:54,905 - INFO - Starting handle ip of day 1696608000000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:56:12,013 - INFO - Starting handle ip of day 1696694400000000000 from 一体云-后端日志 - 3469268
+2023-10-10 10:56:15,000 - INFO - Starting store msg of day 1696608000000000000 from 对象存储-科技云 - 3469270
+2023-10-10 10:56:15,003 - INFO - Starting get log of day 1696608000000000000 from 对象存储-运维大数据 - 3469270
+2023-10-10 10:56:15,003 - INFO - getting log... time 1696521600000000000 from 对象存储-运维大数据 log num is 0 - 3469270
+2023-10-10 10:56:32,105 - INFO - Starting store msg of day 1696694400000000000 from 一体云-后端日志 - 3469268
+2023-10-10 10:56:32,107 - INFO - Starting get log of day 1696608000000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:56:32,107 - INFO - getting log... time 1696521600000000000 from 软件园服务单元 log num is 0 - 3469268
+2023-10-10 10:56:33,369 - INFO - Starting handle ip of day 1696608000000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:56:53,549 - INFO - Starting store msg of day 1696608000000000000 from 软件园服务单元 - 3469268
+2023-10-10 10:56:53,550 - INFO - Starting get log of day 1696608000000000000 from 对象存储-SDG - 3469268
+2023-10-10 10:56:53,550 - INFO - getting log... time 1696521600000000000 from 对象存储-SDG log num is 0 - 3469268
+2023-10-10 10:56:53,570 - INFO - Starting get log of day 1696608000000000000 from 一体云-前端日志 - 3469268
+2023-10-10 10:56:53,570 - INFO - getting log... time 1696521600000000000 from 一体云-前端日志 log num is 0 - 3469268
+2023-10-10 10:58:35,069 - INFO - Starting handle ip of day 1696694400000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:58:40,032 - INFO - Starting handle ip of day 1696694400000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 10:58:55,167 - INFO - Starting store msg of day 1696694400000000000 from Aiops站点-前端日志 - 3469271
+2023-10-10 10:58:55,168 - INFO - Starting get log of day 1696608000000000000 from 一体云-后端日志 - 3469271
+2023-10-10 10:58:55,169 - INFO - getting log... time 1696521600000000000 from 一体云-后端日志 log num is 0 - 3469271
+2023-10-10 10:59:00,118 - INFO - Starting store msg of day 1696694400000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 10:59:00,119 - INFO - Starting get log of day 1696608000000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 10:59:00,119 - INFO - getting log... time 1696521600000000000 from Aiops站点-前端日志 log num is 0 - 3469265
+2023-10-10 11:00:51,663 - INFO - Starting handle ip of day 1696780800000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 11:01:11,761 - INFO - Starting store msg of day 1696780800000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 11:01:11,762 - INFO - Starting get log of day 1696608000000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 11:01:11,763 - INFO - getting log... time 1696521600000000000 from Aiops站点-后端日志 log num is 0 - 3469269
+2023-10-10 11:05:19,874 - INFO - Starting handle ip of day 1696608000000000000 from 一体云-前端日志 - 3469268
+2023-10-10 11:05:40,028 - INFO - Starting store msg of day 1696608000000000000 from 一体云-前端日志 - 3469268
+2023-10-10 11:05:40,028 - INFO - Starting get log of day 1696521600000000000 from 对象存储-科技云 - 3469268
+2023-10-10 11:05:40,029 - INFO - getting log... time 1696435200000000000 from 对象存储-科技云 log num is 0 - 3469268
+2023-10-10 11:06:18,065 - INFO - Starting handle ip of day 1696521600000000000 from 对象存储-科技云 - 3469268
+2023-10-10 11:06:37,977 - INFO - Starting handle ip of day 1696608000000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 11:06:38,184 - INFO - Starting store msg of day 1696521600000000000 from 对象存储-科技云 - 3469268
+2023-10-10 11:06:38,186 - INFO - Starting get log of day 1696521600000000000 from 对象存储-运维大数据 - 3469268
+2023-10-10 11:06:38,186 - INFO - getting log... time 1696435200000000000 from 对象存储-运维大数据 log num is 0 - 3469268
+2023-10-10 11:06:45,949 - INFO - Starting handle ip of day 1696608000000000000 from 一体云-后端日志 - 3469271
+2023-10-10 11:06:58,077 - INFO - Starting store msg of day 1696608000000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 11:06:58,079 - INFO - Starting get log of day 1696521600000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:06:58,080 - INFO - getting log... time 1696435200000000000 from 软件园服务单元 log num is 0 - 3469265
+2023-10-10 11:07:01,198 - INFO - Starting handle ip of day 1696521600000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:07:06,041 - INFO - Starting store msg of day 1696608000000000000 from 一体云-后端日志 - 3469271
+2023-10-10 11:07:06,042 - INFO - Starting get log of day 1696521600000000000 from 对象存储-SDG - 3469271
+2023-10-10 11:07:06,043 - INFO - getting log... time 1696435200000000000 from 对象存储-SDG log num is 0 - 3469271
+2023-10-10 11:07:06,064 - INFO - Starting get log of day 1696521600000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:07:06,065 - INFO - getting log... time 1696435200000000000 from 一体云-前端日志 log num is 0 - 3469271
+2023-10-10 11:07:21,383 - INFO - Starting store msg of day 1696521600000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:07:21,384 - INFO - Starting get log of day 1696521600000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:07:21,384 - INFO - getting log... time 1696435200000000000 from 一体云-后端日志 log num is 0 - 3469265
+2023-10-10 11:08:10,919 - INFO - Starting handle ip of day 1696608000000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 11:08:31,006 - INFO - Starting store msg of day 1696608000000000000 from Aiops站点-后端日志 - 3469269
+2023-10-10 11:08:31,007 - INFO - Starting get log of day 1696521600000000000 from Aiops站点-前端日志 - 3469269
+2023-10-10 11:08:31,007 - INFO - getting log... time 1696435200000000000 from Aiops站点-前端日志 log num is 0 - 3469269
+2023-10-10 11:13:56,050 - INFO - Starting handle ip of day 1696521600000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:14:14,164 - INFO - Starting handle ip of day 1696521600000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:14:16,154 - INFO - Starting store msg of day 1696521600000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:14:16,155 - INFO - Starting get log of day 1696521600000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 11:14:16,156 - INFO - getting log... time 1696435200000000000 from Aiops站点-后端日志 log num is 0 - 3469265
+2023-10-10 11:14:34,257 - INFO - Starting store msg of day 1696521600000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:14:34,258 - INFO - Starting get log of day 1696435200000000000 from 对象存储-科技云 - 3469271
+2023-10-10 11:14:34,258 - INFO - getting log... time 1696348800000000000 from 对象存储-科技云 log num is 0 - 3469271
+2023-10-10 11:14:39,089 - INFO - Starting handle ip of day 1696521600000000000 from Aiops站点-前端日志 - 3469269
+2023-10-10 11:14:59,168 - INFO - Starting store msg of day 1696521600000000000 from Aiops站点-前端日志 - 3469269
+2023-10-10 11:14:59,170 - INFO - Starting get log of day 1696435200000000000 from 对象存储-运维大数据 - 3469269
+2023-10-10 11:14:59,170 - INFO - getting log... time 1696348800000000000 from 对象存储-运维大数据 log num is 0 - 3469269
+2023-10-10 11:15:18,890 - INFO - Starting handle ip of day 1696435200000000000 from 对象存储-科技云 - 3469271
+2023-10-10 11:15:38,975 - INFO - Starting store msg of day 1696435200000000000 from 对象存储-科技云 - 3469271
+2023-10-10 11:15:38,977 - INFO - Starting get log of day 1696435200000000000 from 软件园服务单元 - 3469271
+2023-10-10 11:15:38,978 - INFO - getting log... time 1696348800000000000 from 软件园服务单元 log num is 0 - 3469271
+2023-10-10 11:15:39,399 - INFO - Starting handle ip of day 1696435200000000000 from 软件园服务单元 - 3469271
+2023-10-10 11:15:59,525 - INFO - Starting store msg of day 1696435200000000000 from 软件园服务单元 - 3469271
+2023-10-10 11:15:59,526 - INFO - Starting get log of day 1696435200000000000 from 对象存储-SDG - 3469271
+2023-10-10 11:15:59,526 - INFO - getting log... time 1696348800000000000 from 对象存储-SDG log num is 0 - 3469271
+2023-10-10 11:15:59,539 - INFO - Starting get log of day 1696435200000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:15:59,539 - INFO - getting log... time 1696348800000000000 from 一体云-前端日志 log num is 0 - 3469271
+2023-10-10 11:18:45,188 - INFO - Starting handle ip of day 1696521600000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 11:19:05,266 - INFO - Starting store msg of day 1696521600000000000 from Aiops站点-后端日志 - 3469265
+2023-10-10 11:19:05,267 - INFO - Starting get log of day 1696435200000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:19:05,267 - INFO - getting log... time 1696348800000000000 from 一体云-后端日志 log num is 0 - 3469265
+2023-10-10 11:19:14,782 - INFO - Starting handle ip of day 1696867200000000000 from Aiops站点-后端日志 - 3469272
+2023-10-10 11:19:34,881 - INFO - Starting store msg of day 1696867200000000000 from Aiops站点-后端日志 - 3469272
+2023-10-10 11:19:34,882 - INFO - Starting get log of day 1696435200000000000 from Aiops站点-前端日志 - 3469272
+2023-10-10 11:19:34,883 - INFO - getting log... time 1696348800000000000 from Aiops站点-前端日志 log num is 0 - 3469272
+2023-10-10 11:21:05,438 - INFO - Starting handle ip of day 1696435200000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:21:25,533 - INFO - Starting store msg of day 1696435200000000000 from 一体云-前端日志 - 3469271
+2023-10-10 11:21:25,534 - INFO - Starting get log of day 1696435200000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 11:21:25,535 - INFO - getting log... time 1696348800000000000 from Aiops站点-后端日志 log num is 0 - 3469271
+2023-10-10 11:24:23,937 - INFO - Starting handle ip of day 1696435200000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:24:38,368 - INFO - Starting handle ip of day 1696435200000000000 from Aiops站点-前端日志 - 3469272
+2023-10-10 11:24:44,029 - INFO - Starting store msg of day 1696435200000000000 from 一体云-后端日志 - 3469265
+2023-10-10 11:24:44,031 - INFO - Starting get log of day 1696348800000000000 from 对象存储-科技云 - 3469265
+2023-10-10 11:24:44,031 - INFO - getting log... time 1696262400000000000 from 对象存储-科技云 log num is 0 - 3469265
+2023-10-10 11:24:58,456 - INFO - Starting store msg of day 1696435200000000000 from Aiops站点-前端日志 - 3469272
+2023-10-10 11:24:58,457 - INFO - Starting get log of day 1696348800000000000 from 对象存储-运维大数据 - 3469272
+2023-10-10 11:24:58,457 - INFO - getting log... time 1696262400000000000 from 对象存储-运维大数据 log num is 0 - 3469272
+2023-10-10 11:25:17,555 - INFO - Starting handle ip of day 1696348800000000000 from 对象存储-科技云 - 3469265
+2023-10-10 11:25:37,643 - INFO - Starting store msg of day 1696348800000000000 from 对象存储-科技云 - 3469265
+2023-10-10 11:25:37,644 - INFO - Starting get log of day 1696348800000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:25:37,644 - INFO - getting log... time 1696262400000000000 from 软件园服务单元 log num is 0 - 3469265
+2023-10-10 11:25:37,941 - INFO - Starting handle ip of day 1696348800000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:25:58,055 - INFO - Starting store msg of day 1696348800000000000 from 软件园服务单元 - 3469265
+2023-10-10 11:25:58,056 - INFO - Starting get log of day 1696348800000000000 from 对象存储-SDG - 3469265
+2023-10-10 11:25:58,057 - INFO - getting log... time 1696262400000000000 from 对象存储-SDG log num is 0 - 3469265
+2023-10-10 11:26:01,872 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696262400000000000&end=1696348800000000000 - 3469265
+2023-10-10 11:26:01,872 - ERROR - frontend not running: New
+ - 3469265
+2023-10-10 11:26:04,447 - INFO - Starting handle ip of day 1696435200000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 11:26:12,889 - INFO - Starting get log of day 1696348800000000000 from 一体云-前端日志 - 3469265
+2023-10-10 11:26:12,889 - INFO - getting log... time 1696262400000000000 from 一体云-前端日志 log num is 0 - 3469265
+2023-10-10 11:26:24,527 - INFO - Starting store msg of day 1696435200000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 11:26:24,529 - INFO - Starting get log of day 1696348800000000000 from 一体云-后端日志 - 3469271
+2023-10-10 11:26:24,529 - INFO - getting log... time 1696262400000000000 from 一体云-后端日志 log num is 0 - 3469271
+2023-10-10 11:30:28,606 - INFO - Starting handle ip of day 1696348800000000000 from 一体云-前端日志 - 3469265
+2023-10-10 11:30:45,777 - INFO - Starting handle ip of day 1696348800000000000 from 一体云-后端日志 - 3469271
+2023-10-10 11:30:48,706 - INFO - Starting store msg of day 1696348800000000000 from 一体云-前端日志 - 3469265
+2023-10-10 11:30:48,708 - INFO - Starting get log of day 1696348800000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 11:30:48,708 - INFO - getting log... time 1696262400000000000 from Aiops站点-前端日志 log num is 0 - 3469265
+2023-10-10 11:31:05,865 - INFO - Starting store msg of day 1696348800000000000 from 一体云-后端日志 - 3469271
+2023-10-10 11:31:05,868 - INFO - Starting get log of day 1696348800000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 11:31:05,868 - INFO - getting log... time 1696262400000000000 from Aiops站点-后端日志 log num is 0 - 3469271
+2023-10-10 11:34:56,975 - INFO - Starting handle ip of day 1696348800000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 11:35:12,076 - INFO - Starting handle ip of day 1696348800000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 11:35:17,092 - INFO - Starting store msg of day 1696348800000000000 from Aiops站点-前端日志 - 3469265
+2023-10-10 11:35:32,167 - INFO - Starting store msg of day 1696348800000000000 from Aiops站点-后端日志 - 3469271
+2023-10-10 12:17:19,304 - INFO - Starting handle ip of day 1696435200000000000 from 对象存储-运维大数据 - 3469269
+2023-10-10 12:17:39,393 - INFO - Starting store msg of day 1696435200000000000 from 对象存储-运维大数据 - 3469269
+2023-10-10 12:30:40,731 - INFO - ----All task finished---- - 3469263
+2023-10-10 12:32:10,510 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470220
+2023-10-10 12:32:10,511 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470220
+2023-10-10 12:32:51,618 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470220
+2023-10-10 12:36:56,415 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470381
+2023-10-10 12:36:56,416 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470381
+2023-10-10 12:37:13,352 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470381
+2023-10-10 12:43:16,333 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470467
+2023-10-10 12:43:16,334 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470467
+2023-10-10 12:43:32,751 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470467
+2023-10-10 12:43:32,771 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3470467
+2023-10-10 12:43:32,781 - INFO - ----All task finished---- - 3470465
+2023-10-10 12:47:00,240 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470512
+2023-10-10 12:47:00,241 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470512
+2023-10-10 12:47:17,057 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470512
+2023-10-10 12:47:17,060 - INFO - translate ip to loc failed, trying xdbSearch... - 3470512
+2023-10-10 12:47:17,060 - WARNING - translate ip to loc error. 'IPHandler' object has no attribute 'searcher' - 3470512
+2023-10-10 12:47:17,061 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3470512
+2023-10-10 12:47:17,061 - INFO - translate ip to loc failed, trying xdbSearch... - 3470512
+2023-10-10 12:47:17,062 - WARNING - translate ip to loc error. 'IPHandler' object has no attribute 'searcher' - 3470512
+2023-10-10 12:47:17,062 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3470512
+2023-10-10 12:47:17,063 - INFO - translate ip to loc failed, trying xdbSearch... - 3470512
+2023-10-10 12:47:17,063 - WARNING - translate ip to loc error. 'IPHandler' object has no attribute 'searcher' - 3470512
+2023-10-10 12:47:17,063 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3470512
+2023-10-10 12:47:17,074 - INFO - ----All task finished---- - 3470510
+2023-10-10 12:49:10,115 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470540
+2023-10-10 12:49:10,117 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470540
+2023-10-10 12:49:24,685 - ERROR - Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696794211219396633 - 3470540
+2023-10-10 12:49:24,698 - INFO - ----All task finished---- - 3470538
+2023-10-10 12:49:43,365 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470560
+2023-10-10 12:49:43,366 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470560
+2023-10-10 12:49:43,386 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696867200000000000 - 3470560
+2023-10-10 12:49:43,386 - ERROR - frontend not running: New
+ - 3470560
+2023-10-10 12:49:44,398 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696867200000000000 - 3470560
+2023-10-10 12:49:44,399 - ERROR - frontend not running: New
+ - 3470560
+2023-10-10 12:49:45,410 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696867200000000000 - 3470560
+2023-10-10 12:49:45,410 - ERROR - frontend not running: New
+ - 3470560
+2023-10-10 12:49:46,412 - ERROR - get log failed of day - 3470560
+2023-10-10 12:49:46,426 - INFO - ----All task finished---- - 3470558
+2023-10-10 12:49:59,450 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470576
+2023-10-10 12:49:59,452 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470576
+2023-10-10 12:50:16,763 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470576
+2023-10-10 12:50:16,766 - INFO - translate ip to loc failed, trying xdbSearch... - 3470576
+2023-10-10 12:50:16,766 - WARNING - translate ip to loc error. 'NoneType' object has no attribute 'searchByIPStr' - 3470576
+2023-10-10 12:50:16,766 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3470576
+2023-10-10 12:50:16,767 - INFO - translate ip to loc failed, trying xdbSearch... - 3470576
+2023-10-10 12:50:16,767 - WARNING - translate ip to loc error. 'NoneType' object has no attribute 'searchByIPStr' - 3470576
+2023-10-10 12:50:16,768 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3470576
+2023-10-10 12:50:16,769 - INFO - translate ip to loc failed, trying xdbSearch... - 3470576
+2023-10-10 12:50:16,769 - WARNING - translate ip to loc error. 'NoneType' object has no attribute 'searchByIPStr' - 3470576
+2023-10-10 12:50:16,769 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3470576
+2023-10-10 12:50:16,782 - INFO - ----All task finished---- - 3470572
+2023-10-10 12:51:49,968 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470615
+2023-10-10 12:51:49,970 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470615
+2023-10-10 12:52:06,318 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470615
+2023-10-10 12:56:55,480 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470737
+2023-10-10 12:56:55,481 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470737
+2023-10-10 12:57:11,935 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470737
+2023-10-10 12:59:35,956 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470790
+2023-10-10 12:59:35,957 - INFO - getting log... time 1696780800000000000 from 对象存储-科技云 log num is 0 - 3470790
+2023-10-10 12:59:52,360 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470790
+2023-10-10 13:01:16,242 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470842
+2023-10-10 13:01:16,244 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3470842
+2023-10-10 13:01:32,623 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470842
+2023-10-10 13:01:32,643 - INFO - translate ip to loc failed, trying xdbSearch... - 3470842
+2023-10-10 13:01:32,643 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3470842
+2023-10-10 13:01:32,644 - INFO - translate ip to loc failed, trying xdbSearch... - 3470842
+2023-10-10 13:01:32,645 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3470842
+2023-10-10 13:01:32,646 - INFO - translate ip to loc failed, trying xdbSearch... - 3470842
+2023-10-10 13:01:32,648 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3470842
+2023-10-10 13:01:32,658 - INFO - ----All task finished---- - 3470840
+2023-10-10 13:07:06,220 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3470931
+2023-10-10 13:07:06,222 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3470931
+2023-10-10 13:07:22,755 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3470931
+2023-10-10 13:07:22,777 - INFO - translate ip to loc failed, trying xdbSearch... - 3470931
+2023-10-10 13:07:22,778 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3470931
+2023-10-10 13:07:22,779 - INFO - translate ip to loc failed, trying xdbSearch... - 3470931
+2023-10-10 13:07:22,779 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3470931
+2023-10-10 13:07:22,780 - INFO - translate ip to loc failed, trying xdbSearch... - 3470931
+2023-10-10 13:07:22,782 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3470931
+2023-10-10 13:07:22,793 - INFO - ----All task finished---- - 3470928
+2023-10-10 14:14:35,366 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3471399
+2023-10-10 14:14:35,368 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3471399
+2023-10-10 14:14:40,548 - ERROR - Get log error for Expecting value: line 1 column 1 (char 0) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696867200000000000 - 3471399
+2023-10-10 14:14:40,550 - ERROR - frontend not running: New
+ - 3471399
+2023-10-10 14:15:31,145 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3471399
+2023-10-10 14:15:31,166 - INFO - translate ip to loc failed, trying xdbSearch... - 3471399
+2023-10-10 14:15:31,167 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3471399
+2023-10-10 14:15:31,168 - INFO - translate ip to loc failed, trying xdbSearch... - 3471399
+2023-10-10 14:15:31,168 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3471399
+2023-10-10 14:15:31,169 - INFO - translate ip to loc failed, trying xdbSearch... - 3471399
+2023-10-10 14:15:31,171 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3471399
+2023-10-10 14:15:31,183 - INFO - ----All task finished---- - 3471397
+2023-10-10 14:19:56,742 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3471440
+2023-10-10 14:19:56,743 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3471440
+2023-10-10 14:19:56,797 - ERROR - Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:34135/loki/api/v1/query_range?query={job="obs"}&start=1696780800000000000&end=1696867200000000000 - 3471440
+2023-10-10 14:19:56,810 - INFO - ----All task finished---- - 3471438
+2023-10-10 14:20:10,852 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3471455
+2023-10-10 14:20:10,853 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3471455
+2023-10-10 14:20:35,563 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3471455
+2023-10-10 14:20:35,588 - INFO - translate ip to loc failed, trying xdbSearch... - 3471455
+2023-10-10 14:20:35,589 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3471455
+2023-10-10 14:20:35,589 - INFO - translate ip to loc failed, trying xdbSearch... - 3471455
+2023-10-10 14:20:35,590 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3471455
+2023-10-10 14:20:35,591 - INFO - translate ip to loc failed, trying xdbSearch... - 3471455
+2023-10-10 14:20:35,593 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3471455
+2023-10-10 14:20:35,594 - ERROR - gather msg error. 'int' object has no attribute 'strftime' - 3471455
+2023-10-10 14:20:35,594 - INFO - /home/ip2loc/loc/day/对象存储-科技云_1696867200000000000_day.json created successfully - 3471455
+2023-10-10 14:20:35,605 - INFO - ----All task finished---- - 3471453
+2023-10-10 14:26:17,106 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3471519
+2023-10-10 14:26:17,107 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3471519
+2023-10-10 14:26:33,753 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3471519
+2023-10-10 14:26:33,776 - INFO - translate ip to loc failed, trying xdbSearch... - 3471519
+2023-10-10 14:26:33,777 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3471519
+2023-10-10 14:26:33,778 - INFO - translate ip to loc failed, trying xdbSearch... - 3471519
+2023-10-10 14:26:33,778 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3471519
+2023-10-10 14:26:33,779 - INFO - translate ip to loc failed, trying xdbSearch... - 3471519
+2023-10-10 14:26:33,781 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3471519
+2023-10-10 14:26:33,782 - INFO - /home/ip2loc/loc/day/对象存储-科技云_1696867200000000000_day.json created successfully - 3471519
+2023-10-10 14:26:33,794 - INFO - ----All task finished---- - 3471517
+2023-10-10 14:34:07,353 - INFO - Starting get log of day 1696867200000000000 from 对象存储-科技云 - 3471620
+2023-10-10 14:34:07,354 - INFO - getting log... time 1696867200000000000 from 对象存储-科技云 log num is 0 - 3471620
+2023-10-10 14:34:24,217 - INFO - Starting handle ip of day 1696867200000000000 from 对象存储-科技云 - 3471620
+2023-10-10 14:34:24,237 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,238 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,239 - WARNING - translate ip to loc error. The address 10.100.50.222 is not in the database. - 3471620
+2023-10-10 14:34:24,239 - WARNING - translate ip to loc error. The address 10.100.50.221 is not in the database. - 3471620
+2023-10-10 14:34:24,240 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,241 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,243 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,244 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,244 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,248 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,249 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,250 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,252 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,254 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,257 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,260 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,261 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,261 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,262 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,263 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,266 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,267 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,267 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,268 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,268 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,270 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,272 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,273 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,273 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,276 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,276 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,276 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,277 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,278 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,278 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,279 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,279 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,280 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,280 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,281 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,281 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,282 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,282 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,282 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,283 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,284 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,285 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,285 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,285 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,286 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,287 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,288 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,289 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,289 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,290 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,290 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,291 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,291 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,291 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,292 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,292 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,292 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,293 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,293 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,293 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,294 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,294 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,294 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,295 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,295 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,295 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,296 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,296 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,296 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,297 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,297 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,298 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,299 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,299 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,300 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,300 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,300 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,301 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,301 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,301 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,302 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,302 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,302 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,302 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,303 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,303 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,304 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,304 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,304 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,305 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,305 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,305 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,306 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,306 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,306 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,307 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,307 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,307 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,308 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,308 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,309 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,309 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,309 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,309 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,310 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,310 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,310 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,310 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,311 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,311 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,312 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,312 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,312 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,313 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,313 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,314 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,314 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,314 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,315 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,315 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,316 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,316 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,316 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,316 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,317 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,317 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,318 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,318 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,319 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,319 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,319 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,320 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,320 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,320 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,321 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,321 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,322 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,323 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,323 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,323 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,324 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,324 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,324 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,325 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,325 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,325 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,325 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,326 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,326 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,326 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,326 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,327 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,327 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,327 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,328 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,328 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,329 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,329 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,329 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,330 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,330 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,331 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,331 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,331 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,331 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,332 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,332 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,332 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,332 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,333 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,333 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,333 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,334 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,335 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,335 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,335 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,336 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,336 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,336 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,337 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,337 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,337 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,337 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,338 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,338 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,338 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,339 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,339 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,340 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,340 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,340 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,341 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,341 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,341 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,341 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,342 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,342 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,342 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,343 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,343 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,343 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,343 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,344 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,344 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,344 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,344 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,345 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,345 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,346 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,346 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,346 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,347 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,347 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,347 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,348 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,348 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,348 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,349 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,349 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,349 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,349 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,350 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,350 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,350 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,351 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,351 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,351 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,351 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,351 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,352 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,353 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,353 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,353 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,353 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,354 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,354 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,354 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,355 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,355 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,355 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,356 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,356 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,356 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,356 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,356 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,357 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,357 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,357 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,358 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,358 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,358 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,359 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,359 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,359 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,360 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,360 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,361 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,361 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,361 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,361 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,361 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,362 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,362 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,362 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,363 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,363 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,363 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,364 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,364 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,364 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,364 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,365 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,365 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,365 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,366 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,366 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,366 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,367 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,367 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,367 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,368 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,368 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,368 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,369 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,370 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,370 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,370 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,370 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,371 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,371 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,371 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,371 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,372 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,374 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,374 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,374 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,375 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,375 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,375 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,375 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,376 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,376 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,376 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,376 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,377 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,377 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,377 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,377 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,377 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,378 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,378 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,378 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,378 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,378 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,379 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,379 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,379 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,379 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,380 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,380 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,380 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,381 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,381 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,381 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,382 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,382 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,382 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,383 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,383 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,383 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,384 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,384 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,384 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,385 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,386 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,386 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,386 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,386 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,387 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,387 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,388 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,388 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,388 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,389 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,389 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,389 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,390 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,390 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,391 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,391 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,391 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,392 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,392 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,392 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,392 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,393 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,393 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,393 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,393 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,394 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,394 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,394 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,395 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,396 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,396 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,397 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,397 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,397 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,398 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,398 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,398 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,398 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,398 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,399 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,400 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,400 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,400 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,401 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,401 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,402 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,402 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,403 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,404 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,404 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,405 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,405 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,405 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,405 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,406 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,406 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,406 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,406 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,406 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,407 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,407 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,407 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,407 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,407 - WARNING - translate ip to loc error. The address 10.10.5.4 is not in the database. - 3471620
+2023-10-10 14:34:24,408 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,408 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,409 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,409 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,409 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,410 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,410 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,410 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,410 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,411 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,411 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,411 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,411 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,412 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,412 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,412 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,412 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,413 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,413 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,414 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,414 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,414 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,414 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,415 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,415 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,415 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,415 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,416 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,416 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,416 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,416 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,417 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,417 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,418 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,418 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,419 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,419 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,419 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,420 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,420 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,420 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,420 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,421 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,422 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,422 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,422 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,422 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,423 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,423 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,423 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,423 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,424 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,424 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,424 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,425 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,425 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,426 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,426 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,426 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,426 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,427 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,427 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,428 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,428 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,428 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,429 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,429 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,430 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,430 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,430 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,430 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,430 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,431 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,431 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,432 - INFO - translate ip to loc failed, trying xdbSearch... - 3471620
+2023-10-10 14:34:24,434 - INFO - Starting store msg of day 1696867200000000000 from 对象存储-科技云 - 3471620
+2023-10-10 14:34:24,439 - INFO - /home/ip2loc/loc/day/对象存储-科技云_1696867200000000000_day.json created successfully - 3471620
+2023-10-10 14:34:24,445 - INFO - ----All task finished---- - 3471618
+2023-10-10 14:39:37,999 - INFO - Starting get log of day 1696867200000000000 from 对象存储-运维大数据 - 3471699
+2023-10-10 14:39:38,000 - INFO - getting log... time 1696867200000000000 from 对象存储-运维大数据 log num is 0 - 3471699
+2023-10-10 14:39:38,000 - INFO - /home/ip2loc/loc/day/对象存储-科技云_1696867200000000000_day.json already exists. - 3471696
+2023-10-10 14:39:38,000 - INFO - Starting get log of day 1696867200000000000 from 一体云-后端日志 - 3471703
+2023-10-10 14:39:38,001 - INFO - getting log... time 1696867200000000000 from 一体云-后端日志 log num is 0 - 3471703
+2023-10-10 14:39:38,000 - INFO - Starting get log of day 1696867200000000000 from 软件园服务单元 - 3471697
+2023-10-10 14:39:38,001 - INFO - getting log... time 1696867200000000000 from 软件园服务单元 log num is 0 - 3471697
+2023-10-10 14:39:38,000 - INFO - Starting get log of day 1696867200000000000 from 对象存储-SDG - 3471698
+2023-10-10 14:39:38,001 - INFO - Starting get log of day 1696867200000000000 from 一体云-前端日志 - 3471700
+2023-10-10 14:39:38,002 - INFO - getting log... time 1696867200000000000 from 对象存储-SDG log num is 0 - 3471698
+2023-10-10 14:39:38,002 - INFO - getting log... time 1696867200000000000 from 一体云-前端日志 log num is 0 - 3471700
+2023-10-10 14:39:38,002 - INFO - Starting get log of day 1696867200000000000 from Aiops站点-前端日志 - 3471701
+2023-10-10 14:39:38,003 - INFO - getting log... time 1696867200000000000 from Aiops站点-前端日志 log num is 0 - 3471701
+2023-10-10 14:39:38,002 - INFO - Starting get log of day 1696867200000000000 from Aiops站点-后端日志 - 3471702
+2023-10-10 14:39:38,003 - INFO - getting log... time 1696867200000000000 from Aiops站点-后端日志 log num is 0 - 3471702
+2023-10-10 14:39:39,871 - INFO - Starting handle ip of day 1696867200000000000 from 软件园服务单元 - 3471697
+2023-10-10 14:39:39,925 - INFO - Starting store msg of day 1696867200000000000 from 软件园服务单元 - 3471697
+2023-10-10 14:39:39,927 - INFO - /home/ip2loc/loc/day/软件园服务单元_1696867200000000000_day.json created successfully - 3471697
+2023-10-10 14:40:15,044 - ERROR - Get log error for ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) url http://159.226.91.149:44135/loki/api/v1/query_range?query={job="sdgobs"}&start=1696780800000000000&end=1696863628280140603 - 3471698

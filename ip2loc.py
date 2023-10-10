@@ -11,7 +11,7 @@ from util import get_websites_from_file, store_file_with_retry
 
 def logging_fun():
     logging.basicConfig(level=logging.INFO)
-    log_handle = RotatingFileHandler("./log/log.txt", maxBytes=1024 * 1024 * 1024, backupCount=5)
+    log_handle = RotatingFileHandler("/home/ip2loc/log/log.txt", maxBytes=1024 * 1024 * 1024, backupCount=5)
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s - %(process)d")
     log_handle.setFormatter(formatter)
     logging.getLogger().addHandler(log_handle)
@@ -42,11 +42,11 @@ def get_log_by_time(logh, web, start, end):
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
         # print(f"log length is {len(logs)}, now log_num is {log_num}")
         end_w = last_time
-    return log_num, ip_dict
+    return log_num, all_ip_dict
 
 
-def ip2json(web, start, end, time):
-    filename = f'./loc/day/'
+def ip2json(web, start, end, range_time):
+    filename = f'/home/ip2loc/loc/day/'
     if not os.path.exists(filename):
         os.makedirs(filename)
     filename += web['name']
@@ -57,7 +57,7 @@ def ip2json(web, start, end, time):
         logging.info(f"{filename} already exists.")
         return 
 
-    start_w = end - time
+    start_w = end - range_time
     end_w = end
     log_num = 0
     all_ip_dict = {}
@@ -67,13 +67,13 @@ def ip2json(web, start, end, time):
     
     # split get log by time -- 1d
     while start_w >= start:
-        logging.info(f"getting log... time {start_w} from {web['name']} log num is {log_num}")
+        logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
         lognum, ip_dict = get_log_by_time(logh=logh, web=web, start=start_w, end=end_w)
         log_num += lognum
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
         end_w = start_w
-        start_w = end_w - time
+        start_w = end_w - range_time
     
     if log_num == 0:
         logging.error(f"The log num is 0, get log failed.")
@@ -98,23 +98,26 @@ def ip2json(web, start, end, time):
 
     logging.info(f"Starting store msg of day {str(end)} from {web['name']}")
     if len(loc_msg_list) == 0:
+        logging.error("The loc num is 0.")
         return
-    loc_json:dict = {}
-    loc_json['website'] = web['name']
-    loc_json['creation_time'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    loc_json['loc_num'] = loc_num
-    loc_json['log_num'] = log_num
-    loc_json['range'] = 'day'  
-    loc_json['id'] = web['id']
-    loc_json['data'] = loc_msg_list
-
+    try:
+        loc_json:dict = {}
+        loc_json['website'] = web['name']
+        loc_json['creation_time'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        loc_json['loc_num'] = loc_num
+        loc_json['log_num'] = log_num
+        loc_json['range'] = 'day'  
+        loc_json['id'] = web['id']
+        loc_json['data'] = loc_msg_list
+    except Exception as e:
+        logging.error(f"gather msg error. {str(e)}")
     store_file_with_retry(filename=filename, data=loc_json)
 
 
 if __name__ == '__main__':
     logging_fun()
     oneday = 24*60*60*1*(10**9)
-    pool = Pool(processes=1)
+    pool = Pool(processes=8)
     yes = datetime.now()
     end = datetime(yes.year, yes.month, yes.day)
     end = int(end.timestamp()) * (10**9)
