@@ -28,8 +28,6 @@ def get_log_by_time(logh, web, start, end):
     while(end_w >= start):
         # print(f"start time is {start_w}, end time is {end_w}")
         logs, ok = logh.get_log(url, start_w, end_w, limit)
-        for log in logs:
-            print(log)
         if ok is True:
             if len(logs) != 0:
                 last_time = int(logs[-1][0]) - 1
@@ -125,7 +123,6 @@ if __name__ == '__main__':
     for i in range(1):
         for web in website_list:
             result = pool.apply_async(ip2json, (web, start, end, oneday,))
-            break
         end = start
         start = end - oneday
     pool.close()
