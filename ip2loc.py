@@ -37,6 +37,8 @@ def get_log_by_time(logh, web, start, end):
             logging.error("get log failed of day")
             break
         log_num += len(logs)
+        if log_num % 10000 == 0:
+            logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
         ip_dict = logh.extract_ip_from_log(logs)
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
