@@ -48,7 +48,7 @@ def get_log_by_time(logh, web, start, end):
 
 
 def ip2json(web, start, end, time):
-    filename = f'./loc/day/{end}/'
+    filename = f'./loc/day/'
     if not os.path.exists(filename):
         os.makedirs(filename)
     filename += web['name']
@@ -121,10 +121,11 @@ if __name__ == '__main__':
     end = datetime(yes.year, yes.month, yes.day)
     end = int(end.timestamp()) * (10**9)
     start = end - oneday
+    website_list = get_websites_from_file()
     for i in range(1):
-        website_list = get_websites_from_file()
         for web in website_list:
             result = pool.apply_async(ip2json, (web, start, end, oneday,))
+            break
         end = start
         start = end - oneday
     pool.close()
