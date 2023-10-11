@@ -20,7 +20,7 @@ def logging_fun():
 def get_log_by_time(logh, web, start, end):
     start_w = start
     end_w = end
-    limit = 100
+    limit = 1000
     url = web['api_url']
     last_time = end_w
     log_num = 0
@@ -34,15 +34,17 @@ def get_log_by_time(logh, web, start, end):
             else:
                 break
         else:
-            logging.error("get log failed of day")
-            break
+            logging.error("get log failed of day, trying next min...")
+            last_time -= 60 * (10**9)
+            end_w = last_time
+            continue
         log_num += len(logs)
-        if log_num % 10000 == 0:
-            logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
         ip_dict = logh.extract_ip_from_log(logs)
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
-        # print(f"log length is {len(logs)}, now log_num is {log_num}")
+        if log_num % 10000 == 0:
+            logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
+            # print(f"log length is {len(logs)}, now log_num is {log_num}")
         end_w = last_time
     return log_num, all_ip_dict
 
@@ -118,7 +120,9 @@ def ip2json(web, start, end, range_time):
 
 if __name__ == '__main__':
     logging_fun()
+    # range_time
     oneday = 24*60*60*1*(10**9)
+    tenmin = 10*60*1*(10**9)
     pool = Pool(processes=8)
     yes = datetime.now()
     end = datetime(yes.year, yes.month, yes.day)
@@ -127,7 +131,7 @@ if __name__ == '__main__':
     website_list = get_websites_from_file()
     for i in range(1):
         for web in website_list:
-            result = pool.apply_async(ip2json, (web, start, end, oneday,))
+            result = pool.apply_async(ip2json, (web, start, end, tenmin,))
         end = start
         start = end - oneday
     pool.close()

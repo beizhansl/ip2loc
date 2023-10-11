@@ -18,10 +18,7 @@ class LogHandler:
         ok = True
         while attempts < max_attempts: 
             try:
-                re = requests.get(url, params={'start':start, 'end':end, 'limit':limit}, timeout=30, headers=self.get_header()) 
-                if 'NoSuchKey' in re.text:
-                    ok = True
-                    return log_list, ok
+                re = requests.get(url, params={'start':start, 'end':end, 'limit':limit}, timeout=30, headers=self.get_header())
                 log_res = re.json()
                 log_res = log_res['data']['result']
                 if len(log_res) != 0 and 'values' in log_res[0]:
@@ -30,9 +27,8 @@ class LogHandler:
                 return log_list, ok
             except Exception as e:
                 logging.error(f"Get log error for {str(e)} url {url}&start={start}&end={end}")
-                logging.error(re.text)
+                # logging.error(re.text)
                 attempts += 1
-                time.sleep(1)
                 ok = False
                 # print(log_res)
         return log_list, ok
