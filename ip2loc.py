@@ -25,6 +25,7 @@ def get_log_by_time(logh, web, start, end):
     last_time = end_w
     log_num = 0
     all_ip_dict = {}
+    # TODO: get count of the range
     while(end_w >= start):
         # print(f"start time is {start_w}, end time is {end_w}")
         logs, ok = logh.get_log(url, start_w, end_w, limit)
@@ -34,9 +35,10 @@ def get_log_by_time(logh, web, start, end):
             else:
                 break
         else:
-            logging.error("get log failed of day, trying next min...")
-            last_time -= 60 * (10**9)
+            logging.error("get log failed of day, trying next tenmin...")
+            last_time -= 60 *10* (10**9)
             end_w = last_time
+            time.sleep(2)
             continue
         log_num += len(logs)
         ip_dict = logh.extract_ip_from_log(logs)
@@ -122,18 +124,33 @@ if __name__ == '__main__':
     logging_fun()
     # range_time
     oneday = 24*60*60*1*(10**9)
+    onemin = 60*(10**9)
     tenmin = 10*60*1*(10**9)
+    onehour = 60*60*(10**9)
     pool = Pool(processes=8)
     yes = datetime.now()
     end = datetime(yes.year, yes.month, yes.day)
-    end = int(end.timestamp()) * (10**9)
+    end = int(end.timestamp()) * (10**9) - oneday * 2
+    end_sdg = end
     start = end - oneday
+    start_sdg = start
     website_list = get_websites_from_file()
-    for i in range(1):
+    sdg_web = None
+    days = 15
+    for i in range(days):
         for web in website_list:
+            if web["desc_name"] ==  "SDG_OBS":
+                sdg_web = web
+                continue
             result = pool.apply_async(ip2json, (web, start, end, tenmin,))
         end = start
         start = end - oneday
+
     pool.close()
     pool.join()
+
+    for i in range(days):
+        ip2json(sdg_web, start_sdg, end_sdg, tenmin)
+        end_sdg = start_sdg
+        start_sdg = end_sdg - oneday
     logging.info("----All task finished----")
