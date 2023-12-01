@@ -4,6 +4,8 @@ from multiprocessing import Pool
 from datetime import datetime
 import logging
 from logging.handlers import RotatingFileHandler
+
+import requests
 from handler.iphandler import IPHandler
 from handler.loghandler import LogHandler
 from util import get_websites_from_file, store_file_with_retry
@@ -17,15 +19,14 @@ def logging_fun():
     logging.getLogger().addHandler(log_handle)
 
 
-def get_log_by_time(logh, web, start, end):
+def get_log_by_time(logh:LogHandler, url, start, end):
     start_w = start
     end_w = end
     limit = 1000
-    url = web['api_url']
+    url = url
     last_time = end_w
     log_num = 0
     all_ip_dict = {}
-    # TODO: get count of the range
     while(end_w >= start):
         # print(f"start time is {start_w}, end time is {end_w}")
         logs, ok = logh.get_log(url, start_w, end_w, limit)
@@ -36,7 +37,7 @@ def get_log_by_time(logh, web, start, end):
                 break
         else:
             logging.error("get log failed of day, trying next tenmin...")
-            last_time -= 60 *10* (10**9)
+            last_time -= 60 *10
             end_w = last_time
             time.sleep(2)
             continue
@@ -44,37 +45,44 @@ def get_log_by_time(logh, web, start, end):
         ip_dict = logh.extract_ip_from_log(logs)
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
-        if log_num % 10000 == 0:
-            logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
+        # if log_num % 10000 == 0:
+        #     logging.info(f"getting log... time {end_str} from {web['name']} log num is {log_num}")
             # print(f"log length is {len(logs)}, now log_num is {log_num}")
         end_w = last_time
     return log_num, all_ip_dict
 
-
+# 获得某一天的日志
 def ip2json(web, start, end, range_time):
     filename = f'/home/ip2loc/loc/day/'
     if not os.path.exists(filename):
         os.makedirs(filename)
-    filename += web['name']
-    filename += '_'
-    filename += str(end) 
-    filename +='_day.json'
+    date_object = datetime.utcfromtimestamp(end)
+    end_str = date_object.strftime("%Y-%m-%d")
+    filename += web['name'] + '_' + str(end_str) + '_day.json'
     if os.path.exists(filename):
         logging.info(f"{filename} already exists.")
         return 
-
+     
+    all_ip_dict = {}
+    logh = LogHandler()
+    url = web['api_url']
+    logging.info(f"Starting get log of day {str(end_str)} from {web['name']}")
+    
     start_w = end - range_time
     end_w = end
     log_num = 0
-    all_ip_dict = {}
-    logh = LogHandler()
-    
-    logging.info(f"Starting get log of day {str(end)} from {web['name']}")
-    
-    # split get log by time -- 1d
+    # 分割为1h的数据量
     while start_w >= start:
-        logging.info(f"getting log... time {end_w} from {web['name']} log num is {log_num}")
-        lognum, ip_dict = get_log_by_time(logh=logh, web=web, start=start_w, end=end_w)
+        # TODO: 获得时间范围内的日志数量，数量为0或网络不可达直接返回0
+        # 检查日志量
+        ok= logh.check_log(url, start=start_w, end=end_w)
+        # 没有数据
+        if ok is False:
+            end_w = start_w
+            start_w = end_w - range_time
+            time.sleep(5)
+            continue
+        lognum, ip_dict = get_log_by_time(logh=logh, url=url, start=start_w, end=end_w)
         log_num += lognum
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
@@ -82,10 +90,10 @@ def ip2json(web, start, end, range_time):
         start_w = end_w - range_time
     
     if log_num == 0:
-        logging.error(f"The log num is 0, get log failed.")
+        logging.error(f"The log num is 0, get log failed url {url} end {str(end_str)} ...")
         return
-
-    logging.info(f"Starting handle ip of day {str(end)} from {web['name']}")
+    
+    logging.info(f"Starting handle ip of day {str(end_str)} from {web['name']}")
     iph = IPHandler()
     loc_dict = iph.ip2loc(all_ip_dict)
     loc_msg_list = []
@@ -102,7 +110,7 @@ def ip2json(web, start, end, range_time):
             logging.error("add new loc error, ", str(e))
             pass
 
-    logging.info(f"Starting store msg of day {str(end)} from {web['name']}")
+    logging.info(f"Starting store msg of day {str(end_str)} from {web['name']}")
     if len(loc_msg_list) == 0:
         logging.error("The loc num is 0.")
         return
@@ -121,28 +129,29 @@ def ip2json(web, start, end, range_time):
 
 
 if __name__ == '__main__':
-    logging_fun()
+    # logging_fun()
     # range_time
-    oneday = 24*60*60*1*(10**9)
-    onemin = 60*(10**9)
-    tenmin = 10*60*1*(10**9)
-    onehour = 60*60*(10**9)
+    oneday = 24*60*60*1
+    onemin = 60
+    tenmin = 10*60*1
+    onehour = 60*60
     pool = Pool(processes=8)
-    yes = datetime.now()
+    yes = datetime.now() 
     end = datetime(yes.year, yes.month, yes.day)
-    end = int(end.timestamp()) * (10**9) - oneday * 2
+    # 当天去获取一周前的  确保数据到位
+    end = int(end.timestamp()) - oneday * 7
     end_sdg = end
     start = end - oneday
     start_sdg = start
     website_list = get_websites_from_file()
     sdg_web = None
-    days = 15
+    days = 1
     for i in range(days):
         for web in website_list:
             if web["desc_name"] ==  "SDG_OBS":
                 sdg_web = web
                 continue
-            result = pool.apply_async(ip2json, (web, start, end, tenmin,))
+            result = pool.apply_async(ip2json, (web, start, end, onehour,))
         end = start
         start = end - oneday
 
@@ -150,7 +159,7 @@ if __name__ == '__main__':
     pool.join()
 
     for i in range(days):
-        ip2json(sdg_web, start_sdg, end_sdg, tenmin)
+        ip2json(sdg_web, start_sdg, end_sdg, onehour)
         end_sdg = start_sdg
         start_sdg = end_sdg - oneday
     logging.info("----All task finished----")

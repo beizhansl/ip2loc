@@ -1,3 +1,5 @@
+from datetime import datetime
+import json
 import logging
 import time
 import requests
@@ -11,11 +13,47 @@ class LogHandler:
                     'Connection':'close', 'Accept-Encoding':'gzip,deflate'}
         return headers
 
+
+    def check_log(self, url, start=None, end=None):
+        attempts = 0
+        max_attempts = 3
+        date_object = datetime.utcfromtimestamp(end)
+        end_str = date_object.strftime("%Y-%m-%d-%H:%M:%S")
+        url_check = str.split(url, '{')[0] + 'count_over_time({' + str.split(url, '{')[1] + '[1h])'
+        while attempts < max_attempts: 
+            try:
+                re = requests.get(url_check, params={'start':end, 'end':end, 'step':3600}, timeout=30, headers=self.get_header())
+                result  = re.json()['data']['result']
+                if len(result) == 0 or result[0]['values'][0][1] == "0":
+                    return False
+                else: 
+                    return True
+            except json.decoder.JSONDecodeError as e:
+                logging.error(f"Check error for {e} url {url} end={end_str} response is {re.text}...")
+            except requests.exceptions.ConnectionError as e:
+                logging.error(f"Check error for {e} url {url} end={end_str}...")
+                exit(0)
+            except requests.exceptions.HTTPError as e:
+                logging.error(f"Check error for {e} url {url} end={end_str}...")
+                exit(0)
+            except requests.exceptions.RequestException as e:
+                logging.error(f"Check error for {e} url {url} end={end_str}...")
+                exit(0)    
+            except Exception as e:
+                logging.error(f"Check error for {e} url {url} end={end_str}...")
+            finally:
+                attempts += 1
+                if attempts == 3:
+                    return False
+    
+    
     def get_log(self, url=None, start = None, end = None, limit = None):
         log_list = []
         attempts = 0
         max_attempts = 3
         ok = True
+        date_object = datetime.utcfromtimestamp(end)
+        end_str = date_object.strftime("%Y-%m-%d-%H:%M:%S")
         while attempts < max_attempts: 
             try:
                 re = requests.get(url, params={'start':start, 'end':end, 'limit':limit}, timeout=30, headers=self.get_header())
@@ -25,9 +63,14 @@ class LogHandler:
                     log_list = log_res[0]['values']
                 ok = True
                 return log_list, ok
+            except json.decoder.JSONDecodeError as e:
+                logging.error(f"Get error for {e} url {url} end={end_str} response is {re.text}...")
+            except requests.exceptions.ConnectionError as e:
+                logging.error(f"Get error for {e} url {url} end={end_str}...")
+                exit(0)
             except Exception as e:
-                logging.error(f"Get log error for {str(e)} url {url}&start={start}&end={end}")
-                # logging.error(re.text)
+                logging.error(f"Get error for {e} url {url} end={end_str}...")
+            finally:
                 attempts += 1
                 ok = False
                 # print(log_res)

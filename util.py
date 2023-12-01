@@ -6,14 +6,14 @@ import time
 
 def get_websites_from_url(category_url):
     try:
-        cookie = {'csrftoken':'ZsLyt9MfI3LMKMCClNWjdtInkYs7i6PxTGGFEkrKCJKZmZZC4A29Nx7CGS8TiISK', 'sessionid':'tc5p94yt9zdujg067htcupywk6i6x13q'}
+        cookie = {'csrftoken':'ZsLyt9MfI3LMKMCClNWjdtInkYs7i6PxTGGFEkrKCJKZmZZC4A29Nx7CGS8TiISK', 'sessionid':'mijnznoj0w5wcug7iwaidcvhzfagbj2s'}
         re = requests.get(category_url, cookies=cookie, params={'page':1, 'page_size' : 1000})
         service_list = re.json()['results']
         website_list = []
         for service in service_list:
             website_list.extend(service['website'])
     except Exception as e:
-        print("get websites error, ", str(e))
+        print("get websites error, ", e)
         return None
     filename = "website_list.json"
     with open (filename,'w') as f:

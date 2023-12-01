@@ -1,47 +1,25 @@
+from datetime import datetime
 import requests
-cookie = {'csrftoken':'ZsLyt9MfI3LMKMCClNWjdtInkYs7i6PxTGGFEkrKCJKZmZZC4A29Nx7CGS8TiISK', 'sessionid':'tc5p94yt9zdujg067htcupywk6i6x13q'}
 
-# re = requests.get('https://aiopsbackend.cstcloud.cn/api/v1/log/http-log/category/',cookies=cookie, params={'page':1, 'page_size' : 1000})
 
-# data = re.json()
-# url = data['results'][0]['website'][0]['api_url']
-# print(url)
+# re = requests.get("http://159.226.91.149:34135/loki/api/v1/query_range?query=count_over_time({job=%22obs%22})", params={'start':1695715452, 'end':1695715452}, timeout=30)
+# print(re.text)
 
-# import re
+yes = datetime.now() 
+end = datetime(yes.year, yes.month, yes.day)
+# 当天去获取一周前的  确保数据到位
+print(end.timestamp())
+end = int(end.timestamp()) - 2*24*60*60
+start = end - 60*60
+print(end)
+date_object = datetime.utcfromtimestamp(end)
+end_str = date_object.strftime("%Y-%m-%d")
+print(end_str)
+url = "http://159.226.91.149:34135/loki/api/v1/query_range?query={job=\"obs\"}"
+url_check = str.split(url, '{')[0] + 'count_over_time({' + str.split(url, '{')[1] + '[60m])'
 
-# log = "223.193.36.4 [26/Sep/2023:16:37:16 +0800] 159.226.33.12 200 102 972 service.cstcloud.cn \"GET / HTTP/1.1\" \"-\""
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0',
+                    'Connection':'close', 'Accept-Encoding':'gzip,deflate'}
 
-# # 使用正则表达式提取第二个IP地址
-# ip_pattern = r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b"
-# match = re.findall(ip_pattern, log)
-
-# if len(match) >= 2:
-#     second_ip = match[1]
-#     print("第二个IP地址：", second_ip)
-# else:
-# #     print("日志中没有足够的IP地址")
-# import json
-# re = requests.get('http://159.226.91.149:34135/loki/api/v1/query_range?query={job="service"}', params={'start':'1695680611','end':'1695819432', 'limit': 500000, 'direction':'forward'}, timeout=1000)
-# with open('data.json','w+') as p:
-#     json.dump(re.json(),fp=p, indent=2)
-#print(re.json()['data']['result'][0]['values'])
-
-# import datetime
-# import time
-# print(time.time_ns())
-# print(type(time.time_ns()))
-# t =(1695818370806111500 - 1695213570806111500) / 1e9
-# du = datetime.timedelta(seconds=t)
-# print(str(du))
-
-#from datetime import datetime, timedelta
-#yesterday = datetime.now()
-#end = datetime(yesterday.year, yesterday.month, yesterday.day)
-# print(end.timestamp())
-#nsend = int(end.timestamp()) 
-#print(nsend)
-#print(end)
-import os 
-filename = f'./loc/day/000000'
-if not os.path.exists(filename):
-    os.makedirs(filename)
+re = requests.get(url_check, params={'start':end, 'end':end, 'step':3600}, timeout=30, headers=headers)
+print(re.text)
