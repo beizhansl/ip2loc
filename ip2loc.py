@@ -22,6 +22,8 @@ def logging_fun():
 def get_log_by_time(logh:LogHandler, url, start, end):
     start_w = start
     end_w = end
+    date_object = datetime.utcfromtimestamp(end)
+    end_str = date_object.strftime("%Y-%m-%d")
     limit = 1000
     url = url
     last_time = end_w
@@ -36,12 +38,14 @@ def get_log_by_time(logh:LogHandler, url, start, end):
             else:
                 break
         else:
-            logging.error("get log failed of day, trying next tenmin...")
+            logging.error(f"get log failed of url {url} day {end_str}, trying next tenmin...")
             last_time -= 60 *10
             end_w = last_time
             time.sleep(2)
             continue
         log_num += len(logs)
+        if log_num%10000 == 0:
+            logging.info(f"geting log for url {url} day {end_str} log_num {log_num}")
         ip_dict = logh.extract_ip_from_log(logs)
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
@@ -84,6 +88,7 @@ def ip2json(web, start, end, range_time):
             continue
         lognum, ip_dict = get_log_by_time(logh=logh, url=url, start=start_w, end=end_w)
         log_num += lognum
+        logging.info(f"geting log for url {url} log_num {log_num} day {end_str}")
         for ip_str, num in ip_dict.items():
             all_ip_dict[ip_str] = all_ip_dict.get(ip_str,0) + num
         end_w = start_w
@@ -129,7 +134,7 @@ def ip2json(web, start, end, range_time):
 
 
 if __name__ == '__main__':
-    # logging_fun()
+    logging_fun()
     # range_time
     oneday = 24*60*60*1
     onemin = 60

@@ -20,9 +20,11 @@ class LogHandler:
         date_object = datetime.utcfromtimestamp(end)
         end_str = date_object.strftime("%Y-%m-%d-%H:%M:%S")
         url_check = str.split(url, '{')[0] + 'count_over_time({' + str.split(url, '{')[1] + '[1h])'
+        logging.info(f"checking for {url} {end_str}...")
         while attempts < max_attempts: 
             try:
                 re = requests.get(url_check, params={'start':end, 'end':end, 'step':3600}, timeout=30, headers=self.get_header())
+                re.raise_for_status()
                 result  = re.json()['data']['result']
                 if len(result) == 0 or result[0]['values'][0][1] == "0":
                     return False
@@ -54,9 +56,11 @@ class LogHandler:
         ok = True
         date_object = datetime.utcfromtimestamp(end)
         end_str = date_object.strftime("%Y-%m-%d-%H:%M:%S")
+        logging.info(f"geting log for url {url} end {end_str}")
         while attempts < max_attempts: 
             try:
                 re = requests.get(url, params={'start':start, 'end':end, 'limit':limit}, timeout=30, headers=self.get_header())
+                re.raise_for_status()
                 log_res = re.json()
                 log_res = log_res['data']['result']
                 if len(log_res) != 0 and 'values' in log_res[0]:
@@ -68,6 +72,12 @@ class LogHandler:
             except requests.exceptions.ConnectionError as e:
                 logging.error(f"Get error for {e} url {url} end={end_str}...")
                 exit(0)
+            except requests.exceptions.HTTPError as e:
+                logging.error(f"Get error for {e} url {url} end={end_str}...")
+                exit(0)
+            except requests.exceptions.RequestException as e:
+                logging.error(f"Get error for {e} url {url} end={end_str}...")
+                exit(0)  
             except Exception as e:
                 logging.error(f"Get error for {e} url {url} end={end_str}...")
             finally:
